@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// 单链表的基本操作：
+// 包括：单链表的销毁、清空单链表、求单链表的长度、判断链表是否为空
+
 /*
 * 定义ElemType为结构体类型
 */
