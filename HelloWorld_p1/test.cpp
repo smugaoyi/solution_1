@@ -84,6 +84,22 @@ int clearList(LinkList& L) {
 	return 0;
 }
 
+/*
+* 5、求链表的长度
+*/
+int lenList(LinkList& L) {
+	int i = 0;
+
+	Lnode* p;
+	p = L->next;
+
+	while (p !=NULL) {
+		p = p->next;
+		i++;
+	}
+	return i;
+}
+
 
 int main() {
 
