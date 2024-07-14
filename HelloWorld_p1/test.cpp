@@ -47,6 +47,7 @@ int isEmptyList(LinkList L) {
 
 /*
 * 3、销毁单链表
+* 头指针和头结点也被销毁
 */
 int destroyList(LinkList& L) {
 	// 指向要销毁的结点
@@ -59,6 +60,27 @@ int destroyList(LinkList& L) {
 		delete p;
 
 	}
+	return 0;
+}
+
+/*
+* 4、清空链表
+* 头指针和头结点依然存在
+* 头结点的指针域为NULL
+* 
+*/
+int clearList(LinkList& L) {
+
+	Lnode* p, * q;
+	// 初始时，p指针指向首元结点
+	p = L->next;
+
+	while (p != NULL) {
+		q = p->next;
+		delete p;
+		p = q;
+	}
+	L->next = NULL;
 	return 0;
 }
 
