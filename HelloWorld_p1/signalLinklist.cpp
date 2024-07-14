@@ -103,6 +103,36 @@ int lenList(LinkList& L) {
 	return i;
 }
 
+/*
+* 6、取单链表的第i个元素的内容
+*/
+int getElem(LinkList L, int i ,ElemType &e) {
+
+	// 计数器的初始值为1
+	int j = 1;
+
+	Lnode* p;
+	// 从首元结点开始
+	p = L->next;
+
+	while (p != NULL && j < i)
+	{
+		p = p->next;
+		j++;
+	}
+	
+	if (p == NULL || j > i) {
+	
+		// 找到最后也没有找到
+		return -1;
+	}
+
+	// j == i，找到了
+	e = p->data;
+
+	return 0;
+}
+
 
 int main() {
 
