@@ -123,7 +123,7 @@ int getElem(LinkList L, int i ,ElemType &e) {
 	
 	if (p == NULL || j > i) {
 	
-		// 找到最后也没有找到
+		// 找到最后也没有找到，或者i的值小于j
 		return -1;
 	}
 
