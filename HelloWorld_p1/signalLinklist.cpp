@@ -133,6 +133,21 @@ int getElem(LinkList L, int i ,ElemType &e) {
 	return 0;
 }
 
+/*
+* 7、查找值为e的元素的的地址
+*/
+Lnode* getAddr(LinkList L, int e) {
+
+	Lnode* p;
+	p = L->next;
+
+	while (p != NULL && p->data.age != e) {
+		p = p->next;
+	}
+
+	return p;
+}
+
 
 int main() {
 
