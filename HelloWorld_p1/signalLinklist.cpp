@@ -140,12 +140,43 @@ Lnode* getAddr(LinkList L, int e) {
 
 	Lnode* p;
 	p = L->next;
-
+	// 此处使用年龄age作为例子
 	while (p != NULL && p->data.age != e) {
 		p = p->next;
 	}
 
 	return p;
+}
+
+/*
+* 8、在第i个元素之前插入一个新节点
+* 此处L使用引用类型，插入一个新元素后，L变长，使用L返回
+*/
+int insertE(LinkList &L, int i, ElemType e) {
+
+	Lnode* p;
+	p = L;
+
+	int j = 0;
+	// 循环结束，p指针指向第i-1个节点
+	while (p != NULL && j < i - 1)
+	{
+		p = p->next;
+		j++;
+	}
+
+	// i大于表长+1或者小于1，插入位置非法
+	if (p == NULL || j > i - 1) {
+		return -1;
+	}
+
+	Lnode* s = new Lnode;
+	s->data = e;
+	s->next = p->next;
+	p->next = s;
+
+	return 0;
+
 }
 
 
