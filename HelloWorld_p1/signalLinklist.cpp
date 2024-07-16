@@ -176,7 +176,37 @@ int insertE(LinkList &L, int i, ElemType e) {
 	p->next = s;
 
 	return 0;
+}
 
+/*
+* 9、删除第i个节点
+*/
+int deleteE(LinkList& L, int i) {
+
+	Lnode* p,*q;
+	p = L;
+
+	int j = 0;
+
+	// 循环结束，p指针指向第i-1个节点
+	while (p->next != NULL && j < i - 1)
+	{
+		p = p->next;
+		j++;
+	}
+
+	if (p->next == NULL || j > i - 1) {
+		return -1;
+	}
+
+	// 保存第i个元素的地址，后面的语句执行完后，p->next的值就变了
+	q = p->next;
+
+	// 等价于p->next = q->next;
+	p->next = p->next->next;
+	delete q;
+
+	return 0;
 }
 
 
