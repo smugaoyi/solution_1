@@ -140,7 +140,7 @@ int getElem(LinkList L, int i ,ElemType &e) {
 /*
 * 7、查找值为e的元素的的地址
 */
-Lnode* getAddr(LinkList L, int e) {
+Lnode* locateElem(LinkList L, int e) {
 
 	Lnode* p;
 	p = L->next;
@@ -209,6 +209,29 @@ int deleteE(LinkList& L, int i) {
 	// 等价于p->next = q->next;
 	p->next = p->next->next;
 	delete q;
+
+	return 0;
+}
+
+/*
+* 线性表的合并
+*/
+int union_list(LinkList& La, LinkList Lb) {
+	int la_Len = lenList(La);
+	int lb_Len = lenList(Lb);
+
+	for (int i = 1; i <= lb_Len; i++) {
+	
+		ElemType e;
+		getElem(Lb, i, e);
+
+		// 在La中找e
+		Lnode * p = locateElem(La, e.age);
+		if (p == NULL) {
+			// 在La尾部插入
+		}
+
+	}
 
 	return 0;
 }
