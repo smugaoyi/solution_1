@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// 不念过去，不畏将来
+
 /*
 * 定义ElemType为结构体类型
 */
