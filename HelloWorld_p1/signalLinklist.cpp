@@ -66,7 +66,6 @@ int destroyList(LinkList& L) {
 		p = L;
 		L = L->next;
 		delete p;
-
 	}
 	return 0;
 }
