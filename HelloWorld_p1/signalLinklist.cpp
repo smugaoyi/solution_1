@@ -251,6 +251,7 @@ int union_list(LinkList& La, LinkList Lb) {
 
 /*
 * 有序表的合并——用链表实现
+* 时间复杂度：O(length(La) + length(Lb))，最差的情况下，La和Lb交替插入
 */
 int union_list_orderd(LList& La, LList& Lb,LList &Lc) {
 
