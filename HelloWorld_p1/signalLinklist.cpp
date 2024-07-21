@@ -27,6 +27,12 @@ typedef struct Lnode {
 }Lnode, * LinkList;
 
 
+typedef struct LNode {
+	int data;
+	struct LNode* next;
+} LNode, *LList;
+
+
 LinkList L;
 
 /* 
@@ -213,8 +219,15 @@ int deleteE(LinkList& L, int i) {
 	return 0;
 }
 
+//-----------------------------------线性表的应用
+// 1、线性表的合并
+//	利用两个线性表La和Lb分别表示两个集合A和B，求一个新的集合C，C为A和B的并集；
+// 
+// 2、有序表的合并
+
 /*
 * 线性表的合并
+* 合并两个
 */
 int union_list(LinkList& La, LinkList Lb) {
 	int la_Len = lenList(La);
@@ -232,6 +245,44 @@ int union_list(LinkList& La, LinkList Lb) {
 		}
 
 	}
+
+	return 0;
+}
+
+/*
+* 有序表的合并——用链表实现
+*/
+int union_list_orderd(LList& La, LList& Lb,LList &Lc) {
+
+	Lc = La;
+	LNode* pc;
+	pc = La;
+
+	LNode* pa;
+	pa = La->next;
+
+	LNode* pb;
+	pb = Lb->next;
+
+	while (pa != NULL && pb != NULL) {
+		if (pa->data <= pb->data) {
+			pc->next = pa;
+			pc = pa;
+			pa = pa->next;
+		}
+		else
+		{
+			pc->next = pb;
+			pc = pb;
+			pb = pb->next;
+		}
+	}
+
+	// 循环执行完，pa和pb有一个为NULL
+	// 插入剩余的段
+	pc->next = pa ? pa : pb;
+
+	delete Lb;
 
 	return 0;
 }
