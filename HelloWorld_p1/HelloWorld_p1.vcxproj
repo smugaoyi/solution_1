@@ -127,9 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="doubleLinkList.cpp" />
-    <ClCompile Include="signalLinklist.cpp" />
-    <ClCompile Include="sequence_stack.cpp" />
+    <ClCompile Include="2_double_LinkList.cpp" />
+    <ClCompile Include="4_link_stack.cpp" />
+    <ClCompile Include="1_signal_Linklist.cpp" />
+    <ClCompile Include="3_sequence_stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="signalLinklist.cpp">
+    <ClCompile Include="1_signal_Linklist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="doubleLinkList.cpp">
+    <ClCompile Include="2_double_LinkList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sequence_stack.cpp">
+    <ClCompile Include="3_sequence_stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4_link_stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
