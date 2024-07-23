@@ -129,7 +129,7 @@
   <ItemGroup>
     <ClCompile Include="doubleLinkList.cpp" />
     <ClCompile Include="signalLinklist.cpp" />
-    <ClCompile Include="stack.cpp" />
+    <ClCompile Include="sequence_stack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

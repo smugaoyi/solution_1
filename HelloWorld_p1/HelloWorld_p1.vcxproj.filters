@@ -21,7 +21,7 @@
     <ClCompile Include="doubleLinkList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stack.cpp">
+    <ClCompile Include="sequence_stack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
