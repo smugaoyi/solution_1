@@ -54,3 +54,5 @@ int enterQueue(SqQueue& Q, QElemType e) {
 	return 0;
 }
 
+
+// 517

@@ -26,3 +26,5 @@ int push(LinkStack& S, SElemType e) {
 
 	return 0;
 }
+
+// 462

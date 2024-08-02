@@ -66,3 +66,5 @@ DuLNode* getElemP_Dul(DuLinkList L, int i) {
 	}
 	return p;
 }
+
+// 378

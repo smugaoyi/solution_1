@@ -30,5 +30,8 @@
     <ClCompile Include="5_sequence_queue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="6_link_queue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -54,3 +54,5 @@ int pop(SqStack& S, SElemType& e) {
 
 	return 0;
 }
+
+// 434
