@@ -15,25 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_signal_Linklist.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="2_double_LinkList.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="3_sequence_stack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="4_link_stack.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="5_sequence_queue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="6_link_queue.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="7_sequence_string.cpp">
+    <ClCompile Include="ConsoleApplication1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fcf0ada5-4d81-4c63-98cd-c9bb815b057a}</ProjectGuid>
-    <RootNamespace>HelloWorldp1</RootNamespace>
+    <ProjectGuid>{f6738ad7-3c42-43e1-ade1-7bb9f6d3da29}</ProjectGuid>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>datastructure_p1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,13 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2_double_LinkList.cpp" />
-    <ClCompile Include="4_link_stack.cpp" />
-    <ClCompile Include="1_signal_Linklist.cpp" />
-    <ClCompile Include="3_sequence_stack.cpp" />
-    <ClCompile Include="5_sequence_queue.cpp" />
-    <ClCompile Include="6_link_queue.cpp" />
-    <ClCompile Include="7_sequence_string.cpp" />
+    <ClCompile Include="ConsoleApplication1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
